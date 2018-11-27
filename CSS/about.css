@@ -86,3 +86,12 @@ li .dropdown{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 15px;
+    }
+    input[type="submit"] {
+      background: grey;
+      color: white;
+}
