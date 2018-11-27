@@ -87,7 +87,7 @@ li .dropdown{
   display: block;
 }
 
-P.blocktext {
+p.blocktext {
     margin-left: auto;
     margin-right: auto;
     width: 8em
