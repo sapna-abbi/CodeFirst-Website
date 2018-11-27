@@ -86,3 +86,9 @@ li .dropdown{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
