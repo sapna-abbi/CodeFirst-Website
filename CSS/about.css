@@ -86,11 +86,3 @@ li .dropdown{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-#fullpage {
-  height: 100vh;
-}
-
-#fullpage section{
-  height: 100vh;
-}
