@@ -86,3 +86,8 @@ li .dropdown{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+p.blocktext {
+  text-align: center;
+    
+}
