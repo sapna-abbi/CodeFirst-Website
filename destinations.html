@@ -12,12 +12,10 @@
   <!-- Theme CSS -->
   <link href="css/destinations.css" rel="stylesheet">
 
-<!--Animation Plugin-->
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 
 <!-- jquery-->
  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+<script src="js/jquery.fullpage.js"></script>
 
 
 <style>
@@ -30,16 +28,17 @@ h1 {
 
 <body data-spy="scroll" data-target=.navbar data-offset="60">
 
-<section>
+<div id="fullpage">
+  <section id="header">
   <header>
     <!--image-->
     <img src="images/header.jpg" class="head-image" alt="website title: the travel post">
-    <h2 class="intro">Where will you travel next?</h2>
+    <h2 class="intro"> Where will you travel to next?</h2>
   <!-- navigation-->
   <div class="navigation">
   <ul>
-    <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+    <li><a href="index.html" class="external">Home</a></li>
+      <li><a href="about.html" class="external">About</a></li>
   <li class="dropdown">
     <a href="#" class="dropdown-button">Africa</a>
     <div class="dropdown-content">
@@ -69,44 +68,193 @@ h1 {
 </div>
 </header>
 </section>
-<br>
-<br>
-<br>
-<div id="fullpage">
-<section><h1>Canada</h1></section>
-<section><h1>Jamaica</h1></section>
-<section><h1>Sydney</h1></section>
-<section><h1>Morocco</h1></section>
-<section><h1>Thailand</h1></section>
-<section><h1>Taiwan</h1></section>
-<section><h1>New York</h1></section>
-<section><h1>Paris</h1></section>
-<section><h1>Sydney</h1></section>
-</div>
+<!--side navigation-->
+<div class="container">
 
+<section>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+        <nav>
+            <ul>
+              <li><a href="#header"><span>Top</span></a></li>
+                <li><a href="#canada" class="dot"><span>Canada</span></a></li>
+                <li><a href="#morocco" class="dot"><span>Morocco</span></a></li>
+                <li><a href="#paris" class="dot"><span>Paris</span></a></li>
+                <li><a href="#jamaica" class="dot"><span>Jamaica</span></a></li>
+                <li><a href="#thailand" class="dot"><span>Thailand</span></a></li>
+                <li><a href="#norway" class="dot"><span>Norway</span></a></li>
+                <li><a href="#sydney" class="dot"><span>Sydney</span></a></li>
+                <li><a href="#newyork" class="dot"><span>NewYork</span></a></li>
+                <li><a href="#taiwan" class="dot"><span>Taiwan</span></a></li>
+            </ul>
+        </nav>
+      </div>
+
+    <!-- /sidebar -->
+
+    <div class="content">
+      <section>
+        <section id="canada">
+            <span class="title">Canada</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+      </section>
+</section>
+        <section id="morocco">
+            <span class="title">Morocco</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+
+        <section id="paris">
+            <span class="title">Paris</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="jamaica">
+            <span class="title">Jamaica</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="thailand">
+            <span class="title">Thailand</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="norway">
+            <span class="title">Norway</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="sydney">
+            <span class="title">Sydney</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="newyork">
+            <span class="title">New York</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+        <section id="taiwan">
+            <span class="title">Taiwan</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                quod mazim placerat facer possim assum.
+            </p>
+        </section>
+    </div>
+    <!-- /content -->
+
+<!-- /container -->
+</div>
+<!-- /main -->
+</div>
 <!--scrolling effect-->
 <script type="text/text/javascript" src="js/jquery.smoothscroll.js">
 $('html,body').smoothScroll(500);
 </script>
 
-<!--Animation effect-->
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript">new WOW().init()</script>
 
-<!--current month display -->
+<!--smooth scroll to section--->
+<script src='js/jquery.scrollto.js'></script>
 <script>
-var months    = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-var now       = new Date();
-var thisMonth = months[now.getMonth()]; // getMonth method returns the month of the date (0-January :: 11-December)
-var output = document.getElementById('output');
-console.log(thisMonth);
+  $(document).ready(function() {
+    $('#nav').onePageNav();
+  filter: ':not(.external)'});
+</script>
 
- if(output.textContent !== undefined) {
-    output.textContent = thisMonth;
-  }
-  else {
-    output.innerText = thisMonth;
-  }
+
 </script>
 
 </body>
