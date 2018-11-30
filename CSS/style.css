@@ -88,9 +88,29 @@ li .dropdown{
   display: block;
 }
 
+/*image grid*/
+
+.crop {
+ height: 250px;
+ width: 400px;
+ overflow: hidden;
+}
+.crop .img {
+ height: auto;
+ width: 400px;
+}
+
+li {
+list-style-type: none;
+}
+
 #grid{
   margin-top:50px;
 
+}
+
+#grid a{
+  color: #FFFFFF;
 }
 .grid-padding{
   padding:-10px;
@@ -121,7 +141,7 @@ li .dropdown{
   cursor: default;
 }
 
-.hovereffect .overlay {
+.hovereffect .overlay  {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -146,7 +166,7 @@ li .dropdown{
   transform: scale(1.2);
 }
 
-.hovereffect h2 {
+.hovereffect a{
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -155,13 +175,14 @@ li .dropdown{
   background: rgba(0, 0, 0, 0.5);
 }
 
+
 .hovereffect p.description {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #fff;
   margin: 50px 0 0 0;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -188,4 +209,8 @@ li .dropdown{
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+footer {
+  height: 120px;
 }

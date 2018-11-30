@@ -1,8 +1,9 @@
-body {
+body{
    background: #FFFFFF;
    font-family: 'intro';
    margin: 0;
    padding: 0;
+   -webkit-font-smoothing: antialiased;
 }
 
 section{
@@ -18,6 +19,7 @@ section{
 
 header {
   padding: 0 0px;
+  font-family: 'intro';
   width: 100%;
   height: 400px;
   box-sizing: border-box;
@@ -28,8 +30,11 @@ header {
 
 .intro {
   position:absolute;
-  right:120px;
-  top:400px;
+  font-family: 'intro';
+  color: #000000;
+  right:180px;
+  top:500px;
+  font-size: 60px;
 }
 
 
@@ -87,18 +92,70 @@ li .dropdown{
   display: block;
 }
 
-#fullpage
-{
+
+/* side-navigation */
+
+
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+/* CONTAINER */
+.container {width:80%; margin:0; padding:0px 20px 20px 20px;}
+
+/* SIDEBAR NAVIGATION */
+.sidebar {position:absolute; right:0;}
+.dot {display:inline-block; width:10px; height:10px; background-color:rgba(255,255,255,.3); border-radius:10px; z-index:999; content:''; color:#d3d3d3; font-size:14px; line-height:10px; vertical-align:middle; margin:5px 0 5px 0; font-weight:300;}
+.dot:hover {background-color:rgba(255,255,255,.8); color:#000000;}
+.dot span {margin:0px 0px 20px 15px; position:relative; top:0px; left:-120px;}
+nav {width:130px; height:0px;/*background-color:rgb(240,240,240); border:solid 1px rgb(220,220,220);*/ padding:0 0px; position:fixed; top:50%; right:20px; transform: translate(0, -50%); z-index: 10000; text-align:right;}
+nav ul li a {text-decoration:none;}
+nav ul {list-style-type:none; margin:0; padding:0;}
+.name-active {color:#000000; background-color:#FFD95F; text-align:right;}
+
+/* PAGE CONTENT */
+.content {width:100%; text-align:justify;}
+section {padding:0 0 20px 0;}
+section:last-child {padding:0 0 100vh 0;}
+.title {font-size:24px; color:#000000; text-transform:uppercase; padding:0 0 0px 0;}
+p {margin:0; padding:0px 0 0px 0;}
+
+
+/* full page scroll*/
+#fullpage {
   height: 100vh;
-  overflow: hidden;
+}
+#fullpage section{
+  height:100vh;
 }
 
-#fullpage section {
-  height: 100vh;
+.crop {
+ height: 250px;
+ width: 350px;
+ overflow: hidden;
+}
+.crop .img {
+ height: auto;
+ width: 300px;
 }
 
-#fullpage section h1{
-  margin: 0;
-  padding: 0;
+.grid-padding{
+  padding: 10px;
+}
 
+li {
+list-style-type: none;
+}
+
+.info {
+  margin-left: 100px;
+  width: 400px;
+}
+.title {
+  font-family: 'intro';
+  font-size: 50px;
+  padding-left: 80px;
+}
+
+.content {
+  font-family: courier;
 }
