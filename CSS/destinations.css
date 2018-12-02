@@ -129,14 +129,20 @@ p {margin:0; padding:0px 0 0px 0;}
 }
 
 .crop {
- height: 250px;
+ height: 280px;
  width: 300px;
  overflow: hidden;
+display: flex;
+
 }
 
-.crop .img {
- height: auto;
- width: 300px;
+
+.crop img {
+max-height: 280px;
+max-width: 300px;
+flex-shrink: 0;
+flex: auto;
+
 }
 
 .grid-padding{
@@ -151,6 +157,7 @@ list-style-type: none;
   margin-left: 50px;
   width: 460px;
   font-family: courier;
+
 }
 .title {
   font-family: 'intro';
