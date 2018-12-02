@@ -130,7 +130,7 @@ p {margin:0; padding:0px 0 0px 0;}
 
 .crop {
  height: 250px;
- width: 350px;
+ width: 300px;
  overflow: hidden;
 }
 .crop .img {
@@ -147,15 +147,12 @@ list-style-type: none;
 }
 
 .info {
-  margin-left: 100px;
-  width: 400px;
+  margin-left: 50px;
+  width: 460px;
+  font-family: courier;
 }
 .title {
   font-family: 'intro';
   font-size: 50px;
   padding-left: 80px;
-}
-
-.content {
-  font-family: courier;
 }
