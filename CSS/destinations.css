@@ -129,20 +129,13 @@ p {margin:0; padding:0px 0 0px 0;}
 }
 
 .crop {
- height: 280px;
- width: 300px;
+ height: 250px;
+ width: 350px;
  overflow: hidden;
-display: flex;
-
 }
-
-
-.crop img {
-max-height: 280px;
-max-width: 300px;
-flex-shrink: 0;
-flex: auto;
-
+.crop .img {
+ height: auto;
+ width: 300px;
 }
 
 .grid-padding{
@@ -154,13 +147,15 @@ list-style-type: none;
 }
 
 .info {
-  margin-left: 50px;
-  width: 460px;
-  font-family: courier;
-
+  margin-left: 100px;
+  width: 400px;
 }
 .title {
   font-family: 'intro';
   font-size: 50px;
   padding-left: 80px;
+}
+
+.content {
+  font-family: courier;
 }
